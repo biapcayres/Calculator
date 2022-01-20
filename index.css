@@ -1,0 +1,28 @@
+div#Container {
+    width: 300px;
+    border: 1px solid red;
+    background-color: rgb(218, 211, 211);
+}
+
+div#Visor {
+    width: 100%; /*vai pegar a largura do elemento pai*/
+    height: 70px;
+    border: 1px solid blue;
+}
+
+div#Botoes {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    gap: 2px;
+}
+
+div#Botoes input[type='button'] {
+    width: calc((100% - 6px)/4);
+    font-size: 16px;
+    border: none;
+}
+
+#Botoes input.number {
+    font-weight: bold;
+}

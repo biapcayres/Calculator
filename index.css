@@ -1,13 +1,25 @@
+body {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 div#Container {
     width: 300px;
-    border: 1px solid red;
+    border: 1px solid rgb(218, 211, 211);
     background-color: rgb(218, 211, 211);
 }
 
 div#Visor {
-    width: 100%; /*vai pegar a largura do elemento pai*/
+    width: calc(100% - 16px); /*vai pegar a largura do elemento pai*/
     height: 70px;
-    border: 1px solid blue;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 50px;
+    padding: 8px
 }
 
 div#Botoes {
@@ -25,4 +37,18 @@ div#Botoes input[type='button'] {
 
 #Botoes input.number {
     font-weight: bold;
+}
+
+[type=button]:hover {
+    filter: brightness(80%);
+}
+
+#igualdade {
+    background-color: #4ea3d4;
+    color: white;
+    
+}
+
+.active {
+    filter: brightness(70%);
 }

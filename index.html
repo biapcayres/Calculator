@@ -6,32 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha calculadora</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
-    
     <div id="Container">
-        <div id="Visor">500</div>
+        <div id="Visor">0</div>
         <div id="Botoes">
-            <input type="button" value="%">
-            <input type="button" value="C">
-            <input type="button" value="CE">
-            <input type="button" value="+">
-            <input class="number" type="button" value="7">
-            <input class="number" type="button" value="8">
-            <input class="number" type="button" value="9">
-            <input type="button" value="/">
-            <input class="number" type="button" value="4">
-            <input class="number" type="button" value="5">
-            <input class="number" type="button" value="6">
-            <input type="button" value="x">
-            <input class="number" type="button" value="1">
-            <input class="number" type="button" value="2">
-            <input class="number" type="button" value="3">
-            <input type="button" value="-">
-            <input type="button" value="-/+">
-            <input class="number" type="button" value="0">
-            <input type="button" value=".">
-            <input id="igualdade" type="button" value="=">
+            <input class= "operador" type="button" value="%" onclick="porcentagem()">
+            <input type="button" value="C" onclick="limpar_visor()"> 
+            <input type="button" value="CE" onclick="apagar_ultimo_numero()">
+            <input class= "operador" type="button" value="+">
+            <input class="number" type="button" value="7" onclick="mostrar_caractere_no_visor(this.value)">
+            <input class="number" type="button" value="8" onclick="mostrar_caractere_no_visor(this.value)">
+            <input class="number" type="button" value="9" onclick="mostrar_caractere_no_visor(this.value)">
+            <input class= "operador" type="button" value="/">
+            <input class="number" type="button" value="4" onclick="mostrar_caractere_no_visor(this.value)">
+            <input class="number" type="button" value="5" onclick="mostrar_caractere_no_visor(this.value)">
+            <input class="number" type="button" value="6" onclick="mostrar_caractere_no_visor(this.value)">
+            <input class= "operador" type="button" value="x">
+            <input class="number" type="button" value="1" onclick="mostrar_caractere_no_visor(this.value)">
+            <input class="number" type="button" value="2" onclick="mostrar_caractere_no_visor(this.value)">
+            <input class="number" type="button" value="3" onclick="mostrar_caractere_no_visor(this.value)">
+            <input class= "operador" type="button" value="-">
+            <input type="button" value="-/+" onclick="alterar_sinal()">
+            <input class="number" type="button" value="0" onclick="mostrar_caractere_no_visor(this.value)">
+            <input type="button" value="." onclick="mostrar_caractere_no_visor(this.value)">
+            <input id="igualdade" type="button" value="=" onclick="mostrar_resultado()">
         </div>
     </div>
 </body>

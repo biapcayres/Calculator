@@ -7,7 +7,7 @@ body {
 }
 div#Container {
     width: 300px;
-    border: 1px solid rgb(218, 211, 211);
+    border: 1px solid #dad3d3;
     background-color: rgb(218, 211, 211);
 }
 
@@ -50,5 +50,14 @@ div#Botoes input[type='button'] {
 }
 
 .active {
-    filter: brightness(70%);
+    filter: brightness(80%);
+    font-weight: bold;
+}
+
+.operador {
+    font-size: 24px !important;
+}
+
+.operador[value="+"], .operador[value="-"] {
+    font-size: 26px !important;
 }
